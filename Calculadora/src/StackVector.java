@@ -62,7 +62,7 @@ public class StackVector<E> implements StackInterface<E>{
 
     @Override
     public int size() {
-       return getStackPointer();
+       return stackPointer;
     }
 
     /**

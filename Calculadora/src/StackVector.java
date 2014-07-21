@@ -39,7 +39,13 @@ public class StackVector<E> implements StackInterface<E>{
 
     @Override
     public E pop() {
-                
+        if(stackPointer>0){
+            E ultimo = stack.lastElement();
+            stack.removeElementAt(stackPointer);
+            return ultimo;
+        }
+        return null;
+                    
     }
 
     @Override

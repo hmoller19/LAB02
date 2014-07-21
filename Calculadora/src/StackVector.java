@@ -33,7 +33,7 @@ public class StackVector<E> implements StackInterface<E>{
     @Override
     public void push(E item) {
         stack.addElement(item);
-        setStackPointer(stack.size());
+        stackPointer = stackPointer + 1;
         
     }
 
@@ -49,7 +49,7 @@ public class StackVector<E> implements StackInterface<E>{
 
     @Override
     public boolean empty() {
-        if (stack.capacity()==1)
+        if (getStackPointer()==0)
             stack.isEmpty();
         return empty;
     }

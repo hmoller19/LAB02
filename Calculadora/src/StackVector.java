@@ -42,6 +42,7 @@ public class StackVector<E> implements StackInterface<E>{
         if(stackPointer>0){
             E ultimo = stack.lastElement();
             stack.removeElementAt(stackPointer);
+            stackPointer = stackPointer - 1; 
             return ultimo;
         }
         return null;

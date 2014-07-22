@@ -1,13 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Universidad del Valle de Guatemala
+//Algoritmos y Estructura de Datos
+//Héctor Möller 09002
+//Ángel Basegoda 13
+//Johnny del Cid 13
+//Fecha de entrega: julio  22, 2014
+//
+//Clase: StackArrayList.java
+//Funciones de stack implementando un ArrayList. Parte del material del curso. 
+//
 
-/**
- *
- * @author Héctor
- */
 import java.util.ArrayList;
 
 public class StackArrayList<E>

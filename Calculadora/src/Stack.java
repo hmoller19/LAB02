@@ -1,16 +1,14 @@
+//Universidad del Valle de Guatemala
+//Algoritmos y Estructura de Datos
+//Héctor Möller 09002
+//Ángel Basegoda 13
+//Johnny del Cid 13
+//Fecha de entrega: julio  22, 2014
+//
+//Clase: Stack.java
+//Interfaz de Stack.  Parte del material del curso.
+//
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
-
-/**
- *
- * @author Héctor
- */
 public interface Stack<E> 
 {
 

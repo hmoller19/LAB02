@@ -18,7 +18,7 @@ public class StackVector<E> implements Stack<E>{
     
     //Constructor
     public StackVector(){
-    Vector<E> stack = new Vector<E>(0); 
+        stack = new Vector<E>(0); 
     }
     
     //Atributos 
@@ -37,7 +37,7 @@ public class StackVector<E> implements Stack<E>{
     public E pop() {
         if(stackPointer>0){
             E last = stack.lastElement();
-            stack.removeElementAt(stackPointer);
+            stack.removeElementAt(stackPointer-1);
             stackPointer = stackPointer - 1; 
             return last;
         }
@@ -67,28 +67,28 @@ public class StackVector<E> implements Stack<E>{
     /**
      * @return the stackPointer
      */
-    public int getStackPointer() {
+    private int getStackPointer() {
         return stackPointer;
     }
 
     /**
      * @param stackPointer the stackPointer to set
      */
-    public void setStackPointer(int stackPointer) {
+    private void setStackPointer(int stackPointer) {
         this.stackPointer = stackPointer;
     }
 
     /**
      * @return the empty
      */
-    public boolean isEmpty() {
+    private boolean isEmpty() {
         return empty;
     }
 
     /**
      * @param empty the empty to set
      */
-    public void setEmpty(boolean empty) {
+    private void setEmpty(boolean empty) {
         this.empty = empty;
     }
     

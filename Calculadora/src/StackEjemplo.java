@@ -22,5 +22,6 @@ public static void main(String[] args) {
     System.out.println(cadena);
 	cadena = miStack.pop();
 	System.out.println(cadena);
+        
   }
 }

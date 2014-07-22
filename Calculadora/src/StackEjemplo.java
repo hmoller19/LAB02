@@ -12,19 +12,15 @@
  * @author Héctor
  */
 public class StackEjemplo {
+public static void main(String[] args) {
+    //Stack<String> miStack = new StackArrayList<String>();
+    Stack<String> miStack = new StackVector<String>();
+    miStack.push("Adios");  //1
+	miStack.push("Hola");   //2
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        Stack<String> miStack = new StackVector<String>();
-        miStack.push("Adios");  //1
-            miStack.push("Hola");   //2
-
-        String cadena = miStack.pop();
-        System.out.println(cadena);
-            cadena = miStack.pop();
-            System.out.println(cadena);
-    }
-    
+    String cadena = miStack.pop();
+    System.out.println(cadena);
+	cadena = miStack.pop();
+	System.out.println(cadena);
+  }
 }

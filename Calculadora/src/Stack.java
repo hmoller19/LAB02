@@ -11,8 +11,10 @@
  *
  * @author Héctor
  */
-public interface Stack<E>{
-     public void push(E item);
+public interface Stack<E> 
+{
+
+   public void push(E item);
    // pre: 
    // post: item is added to stack
    // will be popped next if no intervening push

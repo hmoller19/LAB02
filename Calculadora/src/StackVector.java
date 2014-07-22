@@ -36,10 +36,10 @@ public class StackVector<E> implements Stack<E>{
     @Override
     public E pop() {
         if(stackPointer>0){
-            E ultimo = stack.lastElement();
+            E last = stack.lastElement();
             stack.removeElementAt(stackPointer);
             stackPointer = stackPointer - 1; 
-            return ultimo;
+            return last;
         }
         return null;
                     
@@ -53,7 +53,9 @@ public class StackVector<E> implements Stack<E>{
     @Override
     public boolean empty() {
         if (stackPointer==0)
-            stack.isEmpty();
+            setEmpty(true);
+        else
+            setEmpty(false);
         return empty;
     }
 

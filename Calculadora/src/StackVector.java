@@ -8,14 +8,14 @@
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static java.lang.Math.E;
+
 
 
 /**
  *
  * @author Héctor
  */
-public class StackVector<E> implements StackInterface<E>{
+public class StackVector<E> implements Stack<E>{
     
     
     protected Vector <E> stack;
@@ -25,7 +25,7 @@ public class StackVector<E> implements StackInterface<E>{
     Vector<E> stack = new Vector<E>(0); 
     }
     
-    
+    //Atributos 
     private int stackPointer = 0;
     private boolean empty; 
     
@@ -56,7 +56,7 @@ public class StackVector<E> implements StackInterface<E>{
 
     @Override
     public boolean empty() {
-        if (getStackPointer()==0)
+        if (stackPointer==0)
             stack.isEmpty();
         return empty;
     }

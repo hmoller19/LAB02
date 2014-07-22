@@ -11,7 +11,7 @@
  *
  * @author Héctor
  */
-public interface StackInterface<E>{
+public interface Stack<E>{
      public void push(E item);
    // pre: 
    // post: item is added to stack
